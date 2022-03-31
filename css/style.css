@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-tbody 
-{
-	background-color: pink;
-	margin-top: 10px;
-}
 
-tbody tr td:hover
-{
-	background-color: yellow;
-}
-=======
 tbody
 {
 	background-color: pink;
@@ -21,4 +10,4 @@ tbody tr td:hover{
 	background-color: tomato;
 }
 
->>>>>>> b1e5c0f85637ca473b0a11631162dcf561777092
+
