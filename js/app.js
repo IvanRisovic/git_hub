@@ -14,7 +14,14 @@ $('#predmeti').on('click', '#btn1', function(){
 });
 
 $('#predmeti').on('change', '#btn2', function(){
-    $(this).closest('tr').css("background-color", "green");
+    if($(this).is(":checked"))
+    {
+        $(this).closest('tr').css("background-color", "green");
+    }
+    else
+    {
+        $(this).closest('tr').css("background-color", "white");
+    }
 });
 
 $("#search").on("keyup", function() {
