@@ -2,9 +2,10 @@ tbody td
 {
 	background-color: pink;
 	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
-tbody tr td:hover
-{
-	background-color: yellow;
+tbody tr td:hover{
+	background-color: tomato;
 }
+
