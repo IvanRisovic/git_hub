@@ -16,3 +16,25 @@ $('#predmeti').on('click', '#btn1', function(){
 $('#predmeti').on('change', '#btn2', function(){
     $(this).closest('tr').css("background-color", "green");
 });
+
+$("#search").on("keyup", function() {
+    var value = $(this).val();   
+
+    $("table tr").each(function(index) {
+        if (index !== 0) {
+            $row = $(this);            
+            
+            var id = $.map($row.find('td'), function(element){
+                return $(element).text();
+            }).join(' ');
+            
+            
+            if (id.toLowerCase().indexOf(value.toLowerCase()) < 0) {
+                $row.hide();
+            }
+            else {                
+                $row.show();
+            }
+        }
+    });
+});
